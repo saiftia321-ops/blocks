@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    font-family: Arial, sans-serif;
+}
+
+#container {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    background: #d0cbc7;
+}
+
+#game {
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+#game canvas {
+    display: block;
+}
+
+
+/* SCORE */
+
+#score {
+    position: absolute;
+
+    top: 20px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 70px;
+
+    color: #333344;
+
+    z-index: 10;
+
+    pointer-events: none;
+}
+
+
+/* INSTRUCTIONS */
+
+#instructions {
+    position: absolute;
+
+    top: 110px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 18px;
+
+    color: #333344;
+
+    z-index: 10;
+
+    pointer-events: none;
+}
+
+
+/* START SCREEN */
+
+#startScreen {
+    position: absolute;
+
+    inset: 0;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 20;
+}
+
+
+/* GAME OVER */
+
+#gameOver {
+    position: absolute;
+
+    inset: 0;
+
+    display: none;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 30;
+
+    color: #333344;
+
+    text-align: center;
+}
+
+#gameOver h1 {
+    font-size: 48px;
+
+    margin: 0 0 10px;
+}
+
+#gameOver p {
+    font-size: 20px;
+}
+
+
+/* BUTTONS */
+
+button {
+    padding: 14px 35px;
+
+    font-size: 25px;
+
+    border: 3px solid #333344;
+
+    background: white;
+
+    color: #333344;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+}
+
+button:hover {
+    background: #333344;
+
+    color: white;
+}
